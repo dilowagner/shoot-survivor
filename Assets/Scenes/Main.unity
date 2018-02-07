@@ -403,6 +403,8 @@ GameObject:
   m_Component:
   - component: {fileID: 415071731}
   - component: {fileID: 415071732}
+  - component: {fileID: 415071734}
+  - component: {fileID: 415071733}
   m_Layer: 0
   m_Name: EnemyManager
   m_TagString: Untagged
@@ -434,13 +436,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76a99222b1e4a384e923ac7e86efc709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
-  enemy: {fileID: 0}
-  spawnTime: 3
+  playerHealth: {fileID: 1728861284}
+  enemy: {fileID: 1312691619818426, guid: e100270b8cbf741b0a62b8fd3adc77ca, type: 2}
+  spawnTime: 10
   spawnPoints:
-  - {fileID: 4042466801134026, guid: e100270b8cbf741b0a62b8fd3adc77ca, type: 2}
-  - {fileID: 4513846645057020, guid: 0668a3f6371a04dbba7c8d2aeb68d989, type: 2}
-  - {fileID: 4032612467662212, guid: 6c8f2c11903514c16b3eaf1a7146460b, type: 2}
+  - {fileID: 1248231862}
+--- !u!114 &415071733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 415071730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a99222b1e4a384e923ac7e86efc709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 1728861284}
+  enemy: {fileID: 1300553325040236, guid: 6c8f2c11903514c16b3eaf1a7146460b, type: 2}
+  spawnTime: 25
+  spawnPoints:
+  - {fileID: 328830017}
+--- !u!114 &415071734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 415071730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a99222b1e4a384e923ac7e86efc709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 1728861284}
+  enemy: {fileID: 1568783025012414, guid: 0668a3f6371a04dbba7c8d2aeb68d989, type: 2}
+  spawnTime: 15
+  spawnPoints:
+  - {fileID: 2106337519}
 --- !u!1 &578502597
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,6 +1060,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4091563974562258, guid: 6ffbaadb3166749ce8dfb1514e79b0a9,
     type: 2}
   m_PrefabInternal: {fileID: 1728861276}
+--- !u!114 &1728861284 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114136504802424474, guid: 6ffbaadb3166749ce8dfb1514e79b0a9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1728861276}
+  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
 --- !u!1 &1829407272
 GameObject:
   m_ObjectHideFlags: 0
